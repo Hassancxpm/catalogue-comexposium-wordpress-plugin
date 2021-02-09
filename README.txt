@@ -1,6 +1,6 @@
 === Comexposium Catalogue ===
 Contributors: Hassancxpm
-Donate link: https://www.comexposium.fr
+Donate link: https://www.comexposium.com
 Tags: comexposium, catalogue
 Requires at least: 5.6.20
 Stable tag: trunk
