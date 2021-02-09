@@ -4,7 +4,7 @@ Display the Comexposium Catalogue on your website.
 
 ## Install
 
-1. Upload `catalogue-comexposium` folder to the `/wp-content/plugins/` directory
+1. Upload the last`catalogue-comexposium` folder to the `/wp-content/plugins/` directory or download and install the last release zip file
 2. Activate the plugin through the 'Plugins' menu in WordPress
 
 ## Changelog
