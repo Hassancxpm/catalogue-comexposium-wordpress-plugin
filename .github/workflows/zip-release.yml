@@ -1,4 +1,4 @@
-name: Release
+name: Create Release
 
 on:
   push:
@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Zip files
         run: |
-          zip -j catalogue-comexposium -x '*.md*'
+          zip -r catalogue-comexposium.zip -x '*.md*'
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
