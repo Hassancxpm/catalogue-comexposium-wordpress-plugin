@@ -9,9 +9,10 @@ Display the Comexposium Catalogue on your website.
 
 ## Changelog
 
-### 1.0.0
+### 1.1.0
 
 - SSR.
 - Route.
 - CSS auto centering
 - Auto Redirections
+- Multilingue

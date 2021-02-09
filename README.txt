@@ -39,8 +39,9 @@ For now, you can only display one Catalogue per website. This is in order to sim
 
 == Changelog ==
 
-= 1.0.0 =
+= 1.1.0 =
 * SSR.
 * Route.
 * CSS auto centering.
 * Auto Redirections.
+* Multilingual
