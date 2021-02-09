@@ -1,6 +1,6 @@
 # Comexposium Catalogue Wordpress Plugin
 
-Display the Comexposium Catalogue on your website.
+Display the Comexposium Catalogue on your wordpress website.
 
 ## Install
 
