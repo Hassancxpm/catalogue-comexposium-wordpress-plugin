@@ -11,8 +11,8 @@ Display the Comexposium Catalogue on your website.
 
 ### 1.1.0
 
-- SSR.
-- Route.
+- SSR
+- Route
 - CSS auto centering
 - Auto Redirections
 - Multilingue
