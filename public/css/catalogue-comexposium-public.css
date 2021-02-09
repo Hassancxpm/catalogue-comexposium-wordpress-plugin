@@ -1,0 +1,11 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+#catalogue-comexposium-wrapper {
+	max-width: inherit;
+}
+#comexposium-connect2-app {
+	max-width: none;
+	width: calc(100% - 4rem);
+}
