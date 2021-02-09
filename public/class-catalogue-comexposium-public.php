@@ -122,7 +122,7 @@ class Catalogue_Comexposium_Public
 	 *
 	 * @since    1.0.0
 	 */
-	public function getSSRContext()
+	private function getSSRContext()
 	{
 		$id_salon = get_option('catalogue_comexposium_id_salon');
 		$route_name = get_option('catalogue_comexposium_route_name') ?? 'catalogue';
@@ -153,7 +153,7 @@ class Catalogue_Comexposium_Public
 	 *
 	 * @since    1.0.0
 	 */
-	public function curlLauncher(string $url, string $ssrContext)
+	private function curlLauncher(string $url, string $ssrContext)
 	{
 
 		$responseElements = array();
@@ -195,10 +195,13 @@ class Catalogue_Comexposium_Public
 	 *
 	 * @since    1.0.0
 	 */
-	public function displaySSR($ssrResponse = NULL)
+	private function displaySSR($ssrResponse = NULL)
 	{
 
-		$html = '<div id="catalogue-comexposium-wrapper" data-external-content-wrapper="true">SSR is not running</div>';
+		if (!isset($ssrResponse)) {
+			$html = '<div id="catalogue-comexposium-wrapper" data-external-content-wrapper="true">' . _e('SSR is not running', 'catalogue-comexposium') . '</div>';
+			echo $html;
+		}
 
 		if (isset($ssrResponse)) {
 			$html = '<div id="catalogue-comexposium-wrapper" data-external-content-wrapper="true">' . $ssrResponse . '</div>';

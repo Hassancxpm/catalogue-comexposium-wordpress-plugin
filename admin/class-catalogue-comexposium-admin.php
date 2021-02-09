@@ -114,9 +114,7 @@ class Catalogue_Comexposium_Admin
 		$lang_salon = get_option('catalogue_comexposium_lang') ?? 'fr';
 		$id_salon_name_dash = str_replace('_', '-', $id_salon);
 		$shortcodeName = 'catalogue-comexposium-' . $id_salon_name_dash . '-' . $lang_salon;
-		$shortcodeHtml = '<p style="text-align: center; font-size: medium;">';
-		$shortcodeHtml .= _e('Paste this shortcode on the page corresponding to the page name you choose:', 'catalogue-comexposium');
-		$shortcodeHtml .= '<span style="font-size: 1.1em; font-weight: 600;" >[' . $shortcodeName . ']</span></p>';
+		$shortcodeHtml = '<p style="text-align: center; font-size: medium;">' . _e('Paste this shortcode on the page corresponding to the page name you choose:', 'catalogue-comexposium') . '<span style="font-size: 1.1em; font-weight: 600;background: #e7e7e7; padding: 10px; box-shadow: rgb(0 0 0 / 5%) 0px 6px 24px 0px, rgb(0 0 0 / 8%) 0px 0px 0px 1px;" >[' . $shortcodeName . ']</span></p>';
 		echo $shortcodeHtml;
 	}
 

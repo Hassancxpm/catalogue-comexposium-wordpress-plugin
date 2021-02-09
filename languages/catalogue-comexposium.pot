@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: catalogue-comexposium\n"
-"POT-Creation-Date: 2021-02-09 18:56+0100\n"
+"POT-Creation-Date: 2021-02-09 20:27+0100\n"
 "PO-Revision-Date: 2021-02-09 18:22+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -62,4 +62,8 @@ msgstr ""
 
 #: admin/partials/catalogue-comexposium-admin-display.php:54
 msgid "fr or en"
+msgstr ""
+
+#: public/class-catalogue-comexposium-public.php:201
+msgid "SSR is not running"
 msgstr ""
