@@ -14,10 +14,10 @@ jobs:
       - name: Zip files
        # run: |
         #  zip -j catalogue-comexposium
-      - uses: csexton/release-asset-action@v2
+      - name: Archive site content
+        uses: thedoctor0/zip-release@master
         with:
-          file: catalogue-comexposium.zip
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          filename: catalogue-comexposium.zip
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
