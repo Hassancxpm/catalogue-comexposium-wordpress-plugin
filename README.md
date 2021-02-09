@@ -16,4 +16,4 @@ Display the Comexposium Catalogue on your wordpress website.
 - Route
 - CSS auto centering
 - Auto Redirections
-- Multilingue
+- Multilingual
