@@ -7,11 +7,11 @@ on:
 
 jobs:
   release:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v2
-      - run: zip -j catalogue-comexposium
+      - run: zip -r catalogue-comexposium.zip
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
