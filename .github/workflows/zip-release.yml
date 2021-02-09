@@ -10,8 +10,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: checkout code
       - uses: actions/checkout@v2
-      - run: zip -r catalogue-comexposium.zip
+      - name: Zip files
+        run: |
+          zip -r catalogue-comexposium.zip ./catalogue-comexposium -x '*.md*'
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
