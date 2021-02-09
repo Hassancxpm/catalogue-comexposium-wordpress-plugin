@@ -12,8 +12,12 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Zip files
-        run: |
-          zip --junk-paths my-artifact
+       # run: |
+        #  zip -j catalogue-comexposium
+      - uses: csexton/release-asset-action@v2
+        with:
+          file: catalogue-comexposium.zip
+          github-token: ${{ secrets.GITHUB_TOKEN }}
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
