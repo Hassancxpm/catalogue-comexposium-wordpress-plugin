@@ -63,7 +63,7 @@ class Catalogue_Comexposium_Admin
 	public function add_action_links($links)
 	{
 		$settings_link = array(
-			'<a href="' . admin_url('admin.php?page=' . $this->plugin_name) . '">' . __('Settings', $this->plugin_name) . '</a>',
+			'<a href="' . admin_url('admin.php?page=' . $this->plugin_name) . '">' . __('Settings', 'catalogue-comexposium') . '</a>',
 		);
 		return array_merge($settings_link, $links);
 	}
@@ -114,7 +114,10 @@ class Catalogue_Comexposium_Admin
 		$lang_salon = get_option('catalogue_comexposium_lang') ?? 'fr';
 		$id_salon_name_dash = str_replace('_', '-', $id_salon);
 		$shortcodeName = 'catalogue-comexposium-' . $id_salon_name_dash . '-' . $lang_salon;
-		echo '<p style="text-align: center; font-size: medium;">Paste this shortcode on the page corresponding to your configuration: <span style="font-size: 1.1em; font-weight: 600;" >[' . $shortcodeName . ']</span></p>';
+		$shortcodeHtml = '<p style="text-align: center; font-size: medium;">';
+		$shortcodeHtml .= _e('Paste this shortcode on the page corresponding to the page name you choose:', 'catalogue-comexposium');
+		$shortcodeHtml .= '<span style="font-size: 1.1em; font-weight: 600;" >[' . $shortcodeName . ']</span></p>';
+		echo $shortcodeHtml;
 	}
 
 }

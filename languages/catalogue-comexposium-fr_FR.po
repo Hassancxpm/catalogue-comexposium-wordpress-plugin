@@ -1,9 +1,8 @@
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: catalogue-comexposium\n"
 "POT-Creation-Date: 2021-02-09 18:56+0100\n"
-"PO-Revision-Date: 2021-02-09 18:22+0100\n"
+"PO-Revision-Date: 2021-02-09 18:56+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -18,48 +17,55 @@ msgstr ""
 
 #: admin/class-catalogue-comexposium-admin.php:66
 msgid "Settings"
-msgstr ""
+msgstr "Réglages"
 
 #: admin/class-catalogue-comexposium-admin.php:118
-msgid "Paste this shortcode on the page corresponding to the page name you choose:"
+msgid ""
+"Paste this shortcode on the page corresponding to the page name you choose:"
 msgstr ""
+"Collez ce shortcode sur la page où vous souhaitez afficher le catalogue :"
 
 #: admin/partials/catalogue-comexposium-admin-display.php:19
 msgid "You do not have sufficient permissions to access this page"
-msgstr ""
+msgstr "Vous n’avez pas les droits suffisants pour accéder à cette page"
 
 #: admin/partials/catalogue-comexposium-admin-display.php:24
 msgid "Comexposium Catalogue"
-msgstr ""
+msgstr "Catalogue Comexposium"
 
 #: admin/partials/catalogue-comexposium-admin-display.php:33
 msgid "Show ID"
-msgstr ""
+msgstr "ID Salon"
 
 #: admin/partials/catalogue-comexposium-admin-display.php:35
 msgid "Enter the identifier of the show"
-msgstr ""
+msgstr "Saisissez l’identifiant du salon"
 
 #: admin/partials/catalogue-comexposium-admin-display.php:41
 msgid "Page Name"
-msgstr ""
+msgstr "Nom de la page"
 
 #: admin/partials/catalogue-comexposium-admin-display.php:43
 msgid "Enter the name of the page you will display Comexposium Catalogue"
 msgstr ""
+"Saisissez le nom de la page sur laquelle vous souhaitez afficher le "
+"catalogue Comexposium"
 
 #: admin/partials/catalogue-comexposium-admin-display.php:49
 msgid "Langage"
-msgstr ""
+msgstr "Langue"
 
 #: admin/partials/catalogue-comexposium-admin-display.php:51
 msgid "Enter the language code"
-msgstr ""
+msgstr "Saisissez la langue"
 
 #: admin/partials/catalogue-comexposium-admin-display.php:52
 msgid "Must be \"fr\" or \"en\""
-msgstr ""
+msgstr "Doit être ‘fr’ ou ‘en’"
 
 #: admin/partials/catalogue-comexposium-admin-display.php:54
 msgid "fr or en"
-msgstr ""
+msgstr "fr ou en"
+
+#~ msgid "Display the Comexposium Catalogue on your website"
+#~ msgstr "Affiche le Catalogue Comexposium sur votre site"

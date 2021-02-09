@@ -15,7 +15,7 @@
  * @wordpress-plugin
  * Plugin Name:       Catalogue Comexposium
  * Plugin URI:        https://www.comexposium.fr
- * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
+ * Description:       Comexposium Catalogue Offical Plugin.
  * Version:           1.0.0
  * Author:            Hassan Akaou
  * Author URI:        https://www.comexposium.fr

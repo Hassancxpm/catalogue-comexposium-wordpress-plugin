@@ -16,12 +16,12 @@
 <!-- This file should primarily consist of HTML with a little bit of PHP. -->
 <?php
 if (!current_user_can('manage_options')) {
-    wp_die(__('You do not have sufficient permissions to access this page.'));
+    wp_die(__('You do not have sufficient permissions to access this page'));
 }
 ?>
 
 <div class="wrap">
-    <h1>Catalogue Comexposium</h1>
+    <h1><?= _e('Comexposium Catalogue', 'catalogue_comexposium'); ?></h1>
 
     <form method="post" action="options.php">
         <?php settings_errors(); ?>
@@ -30,28 +30,28 @@ if (!current_user_can('manage_options')) {
 
         <table class="form-table">
             <tr valign="top">
-                <th scope="row">Show ID
+                <th scope="row"><?= _e('Show ID', 'catalogue-comexposium'); ?>
                     <span style="color: red;">*</span>
-                    <p>Enter the identifier of the show</p>
+                    <p><?= _e('Enter the identifier of the show', 'catalogue-comexposium'); ?></p>
                 </th>
                 <td><input type="text" name="catalogue_comexposium_id_salon" placeholder="foire_de_paris" value="<?php echo esc_attr(get_option('catalogue_comexposium_id_salon')); ?>" /></td>
             </tr>
 
             <tr valign="top">
-                <th scope="row">Page Name
+                <th scope="row"><?= _e('Page Name', 'catalogue-comexposium'); ?>
                     <span style="color: red;">*</span>
-                    <p>Enter the name of the page you will display Comexposium Catalogue</p>
+                    <p><?= _e('Enter the name of the page you will display Comexposium Catalogue', 'catalogue-comexposium'); ?></p>
                 </th>
                 <td><input type="text" name="catalogue_comexposium_route_name" placeholder="catalogue" value="<?php echo esc_attr(get_option('catalogue_comexposium_route_name')); ?>" /></td>
             </tr>
 
             <tr valign="top">
-                <th scope="row">Langage
+                <th scope="row"><?= _e('Langage', 'catalogue-comexposium'); ?>
                     <span style="color: red;">*</span>
-                    <p>Enter the language code.<br>
-                     Must be 'fr' or 'en'</p>
+                    <p><?= _e('Enter the language code', 'catalogue-comexposium'); ?><br>
+                        <?= _e('Must be "fr" or "en"', 'catalogue-comexposium'); ?></p>
                 </th>
-                <td><input type="text" name="catalogue_comexposium_lang" placeholder="fr" value="<?php echo esc_attr(get_option('catalogue_comexposium_lang')); ?>" /></td>
+                <td><input type="text" name="catalogue_comexposium_lang" placeholder="<?= _e('fr or en', 'catalogue-comexposium' ); ?>" value="<?php echo esc_attr(get_option('catalogue_comexposium_lang')); ?>" /></td>
             </tr>
         </table>
 
