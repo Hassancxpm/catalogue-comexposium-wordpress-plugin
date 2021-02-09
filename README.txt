@@ -11,7 +11,7 @@ Display the Comexposium Catalogue on your website.
 
 == Description ==
 
-This plugin help you to display easily the Comexposium Catalogue and allow indexing bots to crawl and index exhibitors and product pages.
+This plugin help you to display easily the Comexposium Catalogue and allow indexing bots to crawl and index exhibitors pages and product pages.
 
 == Installation ==
 
