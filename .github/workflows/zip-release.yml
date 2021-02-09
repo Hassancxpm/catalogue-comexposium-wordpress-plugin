@@ -11,13 +11,14 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - name: Zip files
+      #- name: Zip files
        # run: |
         #  zip -j catalogue-comexposium
-      - name: Archive site content
+      - name: Archive Release
         uses: thedoctor0/zip-release@master
         with:
-          filename: catalogue-comexposium.zip
+          filename: 'catalogue-comexposium.zip'
+          exclusions: '*.md*'
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
