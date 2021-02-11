@@ -70,7 +70,7 @@ class Catalogue_Comexposium {
 		if ( defined( 'CATALOGUE_COMEXPOSIUM_VERSION' ) ) {
 			$this->version = CATALOGUE_COMEXPOSIUM_VERSION;
 		} else {
-			$this->version = '1.1.0';
+			$this->version = '1.2.0';
 		}
 		$this->plugin_name = 'catalogue-comexposium';
 

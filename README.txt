@@ -39,6 +39,7 @@ For now, you can only display one Catalogue per website. This is in order to sim
 
 == Changelog ==
 
-= 1.1.0 =
+= 1.2.0 =
 * SSR
 * Multilingual
+* SEO
