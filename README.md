@@ -13,7 +13,4 @@ Display the Comexposium Catalogue on your wordpress website.
 ### 1.1.0
 
 - SSR
-- Route
-- CSS auto centering
-- Auto Redirections
 - Multilingual
