@@ -1,0 +1,24 @@
+.shortcode-result {
+  text-align: center;
+  font-size: medium;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  color: white;
+  background: #007cba;
+  border-radius: 3px;
+}
+
+.shortcode-result .code {
+  background-color: #44b450;
+  margin-left: 10px;
+  font-weight: 600;
+  padding: 10px;
+  box-shadow: rgb(0 0 0 / 5%) 0px 6px 24px 0px, rgb(0 0 0 / 8%) 0px 0px 0px 1px;
+}
+
+.red-color {
+    color: red;
+}

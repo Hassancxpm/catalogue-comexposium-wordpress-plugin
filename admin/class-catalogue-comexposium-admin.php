@@ -56,6 +56,29 @@ class Catalogue_Comexposium_Admin
 	}
 
 	/**
+	 * Register the stylesheets for the admin area.
+	 *
+	 * @since    1.0.0
+	 */
+	public function enqueue_styles()
+	{
+
+		/**
+		 * This function is provided for demonstration purposes only.
+		 *
+		 * An instance of this class should be passed to the run() function
+		 * defined in Test_Loader as all of the hooks are defined
+		 * in that particular class.
+		 *
+		 * The Test_Loader will then create the relationship
+		 * between the defined hooks and the functions defined in this
+		 * class.
+		 */
+
+		wp_enqueue_style($this->plugin_name, plugin_dir_url(__FILE__) . 'css/catalogue-comexposium-admin.css', array(), $this->version, 'all');
+	}
+
+	/**
 	 * Add settings action link to the plugins page.
 	 *
 	 * @since    1.0.0
@@ -101,6 +124,8 @@ class Catalogue_Comexposium_Admin
 		register_setting('catalogue-comexposium-settings-group', 'catalogue_comexposium_id_salon');
 		register_setting('catalogue-comexposium-settings-group', 'catalogue_comexposium_route_name');
 		register_setting('catalogue-comexposium-settings-group', 'catalogue_comexposium_lang');
+		register_setting('catalogue-comexposium-settings-group', 'catalogue_comexposium_meta_desc');
+		register_setting('catalogue-comexposium-settings-group', 'catalogue_comexposium_key_words');
 	}
 
 	/**
@@ -114,7 +139,7 @@ class Catalogue_Comexposium_Admin
 		$lang_salon = get_option('catalogue_comexposium_lang') ?? 'fr';
 		$id_salon_name_dash = str_replace('_', '-', $id_salon);
 		$shortcodeName = 'catalogue-comexposium-' . $id_salon_name_dash . '-' . $lang_salon;
-		$shortcodeHtml = '<p style="text-align: center; font-size: medium;">' . _e('Paste this shortcode on the page corresponding to the page name you choose:', 'catalogue-comexposium') . '<span style="font-size: 1.1em; font-weight: 600;background: #e7e7e7; padding: 10px; box-shadow: rgb(0 0 0 / 5%) 0px 6px 24px 0px, rgb(0 0 0 / 8%) 0px 0px 0px 1px;" >[' . $shortcodeName . ']</span></p>';
+		$shortcodeHtml = '<p class="shortcode-result">' . __('Paste this shortcode on the page corresponding to the page name you choose:', 'catalogue-comexposium') . '<span class="regular-text code">[' . $shortcodeName . ']</span></p>';
 		echo $shortcodeHtml;
 	}
 

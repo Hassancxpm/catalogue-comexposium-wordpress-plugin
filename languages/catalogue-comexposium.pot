@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: catalogue-comexposium\n"
-"POT-Creation-Date: 2021-02-09 20:27+0100\n"
+"POT-Creation-Date: 2021-02-11 14:17+0100\n"
 "PO-Revision-Date: 2021-02-09 18:22+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -20,7 +20,7 @@ msgstr ""
 msgid "Settings"
 msgstr ""
 
-#: admin/class-catalogue-comexposium-admin.php:118
+#: admin/class-catalogue-comexposium-admin.php:119
 msgid "Paste this shortcode on the page corresponding to the page name you choose:"
 msgstr ""
 
@@ -64,6 +64,30 @@ msgstr ""
 msgid "fr or en"
 msgstr ""
 
-#: public/class-catalogue-comexposium-public.php:201
+#: admin/partials/catalogue-comexposium-admin-display.php:58
+msgid "Meta Description"
+msgstr ""
+
+#: admin/partials/catalogue-comexposium-admin-display.php:59
+msgid "Enter the meta description"
+msgstr ""
+
+#: admin/partials/catalogue-comexposium-admin-display.php:61
+msgid "this is the meta description"
+msgstr ""
+
+#: admin/partials/catalogue-comexposium-admin-display.php:65
+msgid "Key words"
+msgstr ""
+
+#: admin/partials/catalogue-comexposium-admin-display.php:66
+msgid "Enter key words separated by a comma"
+msgstr ""
+
+#: admin/partials/catalogue-comexposium-admin-display.php:68
+msgid "key, words"
+msgstr ""
+
+#: public/class-catalogue-comexposium-public.php:204
 msgid "SSR is not running"
 msgstr ""

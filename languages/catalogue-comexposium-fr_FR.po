@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: catalogue-comexposium\n"
-"POT-Creation-Date: 2021-02-09 20:27+0100\n"
-"PO-Revision-Date: 2021-02-09 20:28+0100\n"
+"POT-Creation-Date: 2021-02-11 14:18+0100\n"
+"PO-Revision-Date: 2021-02-11 14:20+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -19,7 +19,7 @@ msgstr ""
 msgid "Settings"
 msgstr "Réglages"
 
-#: admin/class-catalogue-comexposium-admin.php:118
+#: admin/class-catalogue-comexposium-admin.php:119
 msgid ""
 "Paste this shortcode on the page corresponding to the page name you choose:"
 msgstr ""
@@ -67,7 +67,31 @@ msgstr "Doit être ‘fr’ ou ‘en’"
 msgid "fr or en"
 msgstr "fr ou en"
 
-#: public/class-catalogue-comexposium-public.php:201
+#: admin/partials/catalogue-comexposium-admin-display.php:58
+msgid "Meta Description"
+msgstr "Description méta"
+
+#: admin/partials/catalogue-comexposium-admin-display.php:59
+msgid "Enter the meta description"
+msgstr "Saisissez la description méta"
+
+#: admin/partials/catalogue-comexposium-admin-display.php:61
+msgid "this is the meta description"
+msgstr "Ceci est la description méta"
+
+#: admin/partials/catalogue-comexposium-admin-display.php:65
+msgid "Key words"
+msgstr "Mots clé"
+
+#: admin/partials/catalogue-comexposium-admin-display.php:66
+msgid "Enter key words separated by a comma"
+msgstr "Saisissez les mots clé séparés par une virgule"
+
+#: admin/partials/catalogue-comexposium-admin-display.php:68
+msgid "key, words"
+msgstr "mots, clé"
+
+#: public/class-catalogue-comexposium-public.php:204
 msgid "SSR is not running"
 msgstr "Le SSR est en cours de démarrage"
 

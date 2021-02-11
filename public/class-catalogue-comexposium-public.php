@@ -127,9 +127,11 @@ class Catalogue_Comexposium_Public
 		$id_salon = get_option('catalogue_comexposium_id_salon');
 		$route_name = get_option('catalogue_comexposium_route_name') ?? 'catalogue';
 		$lang = get_option('catalogue_comexposium_lang') ?? 'fr';
+		$meta_desc = get_option('catalogue_comexposium_meta_desc') ?? '';
+		$key_words = get_option('catalogue_comexposium_key_words') ?? '';
 		$id_salon_name = str_replace('_', ' ', $id_salon);
 
-		$ssrContext = '{"lang":"' . $lang . '","urlMap":{"catalog":"/' . $route_name . '/:defaultSelectedTab?","catalog-exhibitor-full":"/' . $route_name . '/Exposant/:slug","catalog-product-full":"/' . $route_name . '/Produit/:slug","catalog-search-result":"/' . $route_name . '/Recherche/:defaultSelectedTab?"},"baseUrl":"' . get_site_url() . '","desktopBaseUrl":"","mobileBaseUrl":"","canonicalBaseUrl":"","404":"/404.html","exhibition":{"id":"' . $id_salon . '","metaData":{"title":"' . $id_salon_name . '","description":" La sortie familiale : nouveaut\u00e9s, innovations, d\u00e9couvertes pendant 12 jours. ","keywords":"Foire de Paris Maison, gastronomie et shopping. "},"catalog":{"metaData":{"title":"Catalogue ' . $id_salon_name . '"}}}}';
+		$ssrContext = '{"lang":"' . $lang . '","urlMap":{"catalog":"/' . $route_name . '/:defaultSelectedTab?","catalog-exhibitor-full":"/' . $route_name . '/Exposant/:slug","catalog-product-full":"/' . $route_name . '/Produit/:slug","catalog-search-result":"/' . $route_name . '/Recherche/:defaultSelectedTab?"},"baseUrl":"' . get_site_url() . '","desktopBaseUrl":"","mobileBaseUrl":"","canonicalBaseUrl":"","404":"/404.html","exhibition":{"id":"' . $id_salon . '","metaData":{"title":"' . $id_salon_name . '","description":"' . $meta_desc . '","keywords":"' . $key_words . '"},"catalog":{"metaData":{"title":"Catalogue ' . $id_salon_name . '"}}}}';
 
 		return $ssrContext;
 	}

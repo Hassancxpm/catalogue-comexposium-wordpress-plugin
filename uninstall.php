@@ -34,14 +34,11 @@ if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) {
 delete_option('catalogue_comexposium_id_salon');
 delete_option('catalogue_comexposium_route_name');
 delete_option('catalogue_comexposium_lang');
+delete_option('catalogue_comexposium_meta_desc');
+delete_option('catalogue_comexposium_key_words');
 
 foreach (wp_load_alloptions() as $option) {
 	if (strpos($option, 'catalogue_comexposium') === 0) {
 		delete_option($option);
 	}
 }
-
-// delete database table
-global $wpdb;
-$table_name = $wpdb->prefix . 'catalogue_comexposium';
-$wpdb->query("DROP TABLE IF EXISTS {$table_name}");
