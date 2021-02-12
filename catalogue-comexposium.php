@@ -16,7 +16,7 @@
  * Plugin Name:       Catalogue Comexposium
  * Plugin URI:        https://www.comexposium.fr
  * Description:       Comexposium Catalogue Offical Plugin.
- * Version:           1.2.0
+ * Version:           1.2.1
  * Author:            Hassan Akaou
  * Author URI:        https://www.comexposium.fr
  * License:           GPL-2.0+

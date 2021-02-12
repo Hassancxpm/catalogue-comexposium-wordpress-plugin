@@ -10,7 +10,7 @@ Display the Comexposium Catalogue on your wordpress website.
 
 ## Changelog
 
-### 1.2.0
+### 1.2.1
 
 - SSR
 - Multilingual
